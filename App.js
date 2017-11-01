@@ -1,6 +1,7 @@
 import Expo from "expo";
 import React from "react";
-import App from "./js/App";
+import App from "./js_templates/App";
+// import App from "./js/App";
 
 export default class App1 extends React.Component {
   constructor() {
