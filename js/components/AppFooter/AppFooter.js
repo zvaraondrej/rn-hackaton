@@ -7,14 +7,18 @@ export default function AppFooter(props) {
     <Footer>
       <FooterTab>
         <Button>
-          <Icon name="apps" />
+          <Icon name="pulse" />
         </Button>
-        <Button>
-          <Icon name="person" />
+        <Button
+          onPress={props.onWeatherPress}
+          >
+          <Icon name="partly-sunny" />
         </Button>
       </FooterTab>
     </Footer>
   );
-}
+};
 
-AppFooter.propTypes = {};
+AppFooter.propTypes = {
+  onWeatherPress: PropTypes.func
+};

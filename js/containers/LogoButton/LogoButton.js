@@ -45,11 +45,11 @@ const LogoButton = props => {
 };
 
 LogoButton.propTypes = {
-  onPress: PropTypes.func
+    onPress: PropTypes.func
 };
 
 const mapStateToProps = state => ({
-  text: state.main.text
+    text: state.main.text
 });
 
 export default connect(mapStateToProps)(LogoButton);

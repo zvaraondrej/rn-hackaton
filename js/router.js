@@ -2,6 +2,7 @@ import { StackNavigator } from "react-navigation";
 
 import Home from "./screens/Home.screen";
 import Start from "./screens/Start.screen";
+import Weather from "./screens/Weather.screen";
 
 export default StackNavigator(
   {
@@ -15,6 +16,12 @@ export default StackNavigator(
       screen: Start,
       navigationOptions: {
         headerTitle: "Start"
+      }
+    },
+    Weather: {
+      screen: Weather,
+      navigationOptions: {
+        headerTitle: "Weather"
       }
     }
   },

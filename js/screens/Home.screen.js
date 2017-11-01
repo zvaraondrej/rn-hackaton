@@ -16,8 +16,8 @@ class Home extends Component {
     return (
       <AppContainer>
         <AppHeader />
-        <LogoButton onPress={() => this.props.navigation.navigate("Start")} />
-        <AppFooter />
+          <LogoButton onPress={() => this.props.navigation.navigate("Start")} />
+        <AppFooter onWeatherPress={() => this.props.navigation.navigate("Weather")}/>
       </AppContainer>
     );
   }
